@@ -3,72 +3,100 @@ code {
     monospace;
 }
 
-html,body,#root {
+html,#root {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  background: rgb(34,193,195);
+  background: linear-gradient(135deg, rgba(34,193,195,1) 0%,     rgba(253,187,45,1) 100%);
   background-size: cover;
   background-position: center;
 }
 
-h1,h2,h3 {
-  margin-bottom: 20px;
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f8f8f8;
+  background: rgb(34,193,195);
+  background: linear-gradient(135deg, rgba(34,193,195,1) 0%,rgba(253,187,45,1) 100%);
 }
-.login-form {
-  font-size: large;
-  max-width: 300px;
+
+div {
+  max-width: 400px;
   padding: 20px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.login-form h2 {
-  margin-bottom: 20px;
+
+h2 {
+  font-size: 24px;
   text-align: center;
 }
 
-.login-form .form-group {
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #1e90ff; /* Dodger Blue */
+}
+
+h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #888;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
   margin-bottom: 10px;
 }
-.login-form label {
-  display: block;
+
+label {
+  font-size: 16px;
   font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
+input {
+  padding: 4px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  gap: 10px;
-  text-align: justify;
 }
 
-.login-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #4caf50;
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #1e90ff; /* Dodger Blue */
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  position:absolute;
 }
 
-.login-form button:hover {
-  background-color: #45a049;
+p {
+  text-align: center;
 }
-.login-form .center-button {
-  display: block;
+.center-button {
   margin: 0 auto;
-  position:absolute;
+  display: block;
 }
 @media (max-width: 768px) {
   .login-form {
